@@ -14,17 +14,17 @@ insert into taxi(id, reg_number, region_id) values (8, 'WK 12 DN GP',3);
 insert into taxi(id, reg_number, region_id) values (9, 'WAS 123 GP',3);
 
 -- Gauteng
-insert into routes(id, name) values (1, 'Johannesburg-Soweto');
-insert into routes(id, name) values (2, 'Pretoria-Soweto');
-insert into routes(id, name) values (3, 'Johannesburg-Pretoria');
+insert into routes(id, name) values (1, 'Johannesburg-Soweto' 30);
+insert into routes(id, name) values (2, 'Pretoria-Soweto', 45.50);
+insert into routes(id, name) values (3, 'Johannesburg-Pretoria', 42);
 -- Cape Town
-insert into routes(id, name) values (4, 'Cape Town-Bellville');
-insert into routes(id, name) values (5, 'Cape Town-Langa');
-insert into routes(id, name) values (6, 'Nyanga-Bellville');
+insert into routes(id, name) values (4, 'Cape Town-Bellville', 17);
+insert into routes(id, name) values (5, 'Cape Town-Langa', 17);
+insert into routes(id, name) values (6, 'Nyanga-Bellville', 15);
 -- Durban
-insert into routes(id, name) values (7, 'Durban-Mhlanga');
-insert into routes(id, name) values (8, 'Durban-Mlazi');
-insert into routes(id, name) values (9, 'Port Shepstone-Durban');
+insert into routes(id, name) values (7, 'Durban-Mhlanga', 110);
+insert into routes(id, name) values (8, 'Durban-Mlazi', 50);
+insert into routes(id, name) values (9, 'Port Shepstone-Durban', 85);
 
 -- trips
 insert into trip(id, route_id, taxi_id) values (1, 1,7);
