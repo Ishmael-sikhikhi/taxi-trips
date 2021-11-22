@@ -5,7 +5,8 @@ create table region (
 
 create table routes (
     id int primary key not null,
-    name text not null
+    name text not null,
+    amount float
 );
 
 create table taxi (
