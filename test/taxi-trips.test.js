@@ -18,7 +18,7 @@ describe('Taxi Trips', function () {
     // });
 
     it('should find how many trips all the taxis made', async function () {
-        assert.equal(27, await taxiTrips.totalTripCount());
+        assert.equal(24, await taxiTrips.totalTripCount());
 
     });
 
@@ -60,7 +60,7 @@ describe('Taxi Trips', function () {
       assert.deepStrictEqual([{}, {}, {}], await taxiTrips.findTotalIncomePerTaxi());
 
     });
-    
+
 
     it('find the total income for all the taxis', async function () {
 
