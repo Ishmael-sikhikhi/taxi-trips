@@ -11,7 +11,7 @@ create table routes (
 
 create table taxi (
     id int primary key not null,
-    name text not null,
+    reg_number text not null,
     region_id int not null,
     foreign key (region_id) references region(id)
 );
