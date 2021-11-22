@@ -44,15 +44,15 @@ describe('Taxi Trips', function () {
 
     it('should find the total number of trips by region', async function () {
        
-        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Cape Town'));
-        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Gauteng'));
-        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Gauteng'));
+        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Cape Town'));
+        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Gauteng'));
+        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Gauteng'));
 
     });
 
     it('find the total income for a given reg number', async function () {   
         assert.deepStrictEqual(245, await taxiTrips.findIncomeByRegNumber('GI 12 NC ZN'));
-        assert.deepStrictEqual(117.5, await taxiTrips.findIncomeByRegNumber('WK 12 DN GP'));
+        assert.deepStrictEqual(87.5, await taxiTrips.findIncomeByRegNumber('WK 12 DN GP'));
 
     });
 
@@ -64,7 +64,7 @@ describe('Taxi Trips', function () {
 
     it('find the total income for all the taxis', async function () {
 
-        assert.deepStrictEqual(1240.5, await taxiTrips.findTotalIncome());
+        assert.deepStrictEqual(1144.5, await taxiTrips.findTotalIncome());
     });
 
 
