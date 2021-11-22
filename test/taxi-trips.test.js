@@ -60,6 +60,7 @@ describe('Taxi Trips', function () {
       assert.deepStrictEqual([{}, {}, {}], await taxiTrips.findTotalIncomePerTaxi());
 
     });
+    
 
     it('find the total income for all the taxis', async function () {
 
