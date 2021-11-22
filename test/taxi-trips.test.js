@@ -44,9 +44,9 @@ describe('Taxi Trips', function () {
 
     it('should find the total number of trips by region', async function () {
        
-        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Cape Town'));
-        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Gauteng'));
-        assert.deepStrictEqual(6, await taxiTrips.findTripsByRegion('Gauteng'));
+        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Cape Town'));
+        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Gauteng'));
+        assert.deepStrictEqual(9, await taxiTrips.findTripsByRegion('Gauteng'));
 
     });
 
